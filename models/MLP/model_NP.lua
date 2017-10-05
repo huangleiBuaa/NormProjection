@@ -1,6 +1,6 @@
 require '../../module/Linear_PN'
 require '../../module/Linear_Oblique'
-require '../../module/Linear_PN_EveryIteration'
+require '../../module/Linear_PN_EI'
 
 
 function create_model(opt)
@@ -31,7 +31,7 @@ function create_model(opt)
   local module_BN=nn.BatchLinear_FIM
   local module_PN=nn.Linear_PN
   local module_Oblique=nn.Linear_Oblique
-  local module_PN_EI=nn.Linear_PN_EveryIteration
+  local module_PN_EI=nn.Linear_PN_EI
  
   local function block_sgd(n_input, n_output)
     local s=nn.Sequential()
@@ -103,7 +103,7 @@ function create_model(opt)
      end
 
   elseif opt.model_method=='PN_EI' then
-   model:add(nn.Linear_PN_EveryIteration(opt.n_inputs,cfg_hidden[1],opt.learningRate,opt.orth_intial))
+   model:add(nn.Linear_PN_EI(opt.n_inputs,cfg_hidden[1],opt.learningRate,opt.orth_intial))
      for i=1,n do
        if i==n then
          model:add(block_PN_EI(cfg_hidden[i],opt.n_outputs))

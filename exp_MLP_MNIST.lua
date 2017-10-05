@@ -36,7 +36,7 @@ cmd:option('-inputScaled',true,'whether preoprocess the input, scale to (0,1)')
 cmd:option('-inputCentered',true,'whether preoprocess the input, minus the mean')
 
 cmd:option('-batchSize',256,'the number of examples per batch')
-cmd:option('-learningRate',1,'learning rate')
+cmd:option('-learningRate',0.3,'learning rate')
 cmd:option('-weightDecay',0,'weight Decay for regularization')
 cmd:option('-momentum',0,'momentum')
 
