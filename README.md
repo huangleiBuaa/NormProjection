@@ -56,7 +56,7 @@ th exp_Conv_imageNet_expDecay.lua -model imagenet/preresnet_BN -LR 0.05
 You can training other respective models by using the parameter '-model'
 
 
-#### 4 Semi-supervised learning experiments on Ladder networks
+#### 4. Semi-supervised learning experiments on Ladder networks
 The semi-supervised tasks based on Ladder network can be find in this project: https://github.com/huangleiBuaa/Ladder_deepSSL_NP
 
 
