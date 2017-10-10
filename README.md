@@ -1,5 +1,5 @@
 # NormProjection
-This project is the Torch implementation of the paper :Projection Based Weight Normalization for Deep Neural Networks (arXiv:1710.02338)
+This project is the Torch implementation of the paper: Projection Based Weight Normalization for Deep Neural Networks (arXiv:1710.02338)
 
 * bibtex:
 ```Bash
@@ -39,7 +39,8 @@ luarocks install optnet
   bash 3_execute_Conv_VGG.sh 
   bash 4_execute_Conv_resnet.sh  
  ```
- The Inception model is based on the project on: https://github.com/soumith/imagenet-multiGPU.torch
+ The Inception model is based on the project on: https://github.com/soumith/imagenet-multiGPU.torch.
+ 
  The residual network  model is based on the facebook torch project: https://github.com/facebook/fb.resnet.torch
 
 
@@ -55,7 +56,7 @@ th exp_Conv_imageNet_expDecay.lua -model imagenet/preresnet_BN -LR 0.05
 You can training other respective models by using the parameter '-model'
 
 
-####4 Semi-supervised learning experiments on Ladder networks
+#### 4 Semi-supervised learning experiments on Ladder networks
 The semi-supervised tasks based on Ladder network can be find in this project: https://github.com/huangleiBuaa/Ladder_deepSSL_NP
 
 
