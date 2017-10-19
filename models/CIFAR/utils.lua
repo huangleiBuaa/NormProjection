@@ -37,7 +37,7 @@ function utils.DisableBias(model)
       v.gradBias = nil
    end
    for i,v in ipairs(model:findModules'cudnn.Spatial_PN') do
-      v.bias = nil
+       v.bias = nil
       v.gradBias = nil
    end
 end
